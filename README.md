@@ -2,6 +2,8 @@
 
 > **Finans Teknolojileri** dersi ödevi · QR tabanlı ödeme sistemleri demosu
 
+🔗 **Canlı demo:** https://pay-qr-teal.vercel.app/
+
 PayQR, modern fintech ödeme sistemlerinin (QR ile ödeme, dijital cüzdan)
 mantığını gösteren küçük bir web uygulamasıdır. Gerçek para hareketi **yoktur**;
 tamamen eğitim amaçlıdır.
