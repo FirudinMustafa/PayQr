@@ -71,6 +71,26 @@
   .nav button:hover { border-color:#6c5ce7; }
   .count { color:#95a3c4; font-size:14px; min-width:44px; text-align:center; }
   .foot { position: fixed; bottom: 24px; left: 26px; color:#5d6a8c; font-size: 13px; }
+
+  /* PDF / yazdırma: her slayt ayrı bir yatay sayfa olur */
+  @media print {
+    @page { size: 1280px 720px; margin: 0; }
+    html, body { background: #0b1020 !important; }
+    .nav, .foot { display: none !important; }
+    .deck { width: auto; height: auto; }
+    .slide {
+      display: flex !important;
+      position: relative !important;
+      inset: auto !important;
+      width: 1280px;
+      height: 720px;
+      page-break-after: always;
+      break-after: page;
+      animation: none !important;
+    }
+    .slide:last-child { page-break-after: auto; break-after: auto; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
 </style>
 </head>
 <body>
